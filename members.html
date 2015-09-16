@@ -1,0 +1,635 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	
+	<!-- mobile meta tag -->		
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<title>Members</title> 
+	
+	<!-- main style -->
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+	
+	<!-- color scheme -->
+	<link rel="stylesheet" type="text/css" href="color-schemes/red/red.css" media="screen" title="red" />
+	
+	
+	<!--miscellaneous-->
+	<link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto1.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/audioplayer.css" media="screen" />	
+	
+	<!-- revolution slider settings -->
+	<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />		
+
+	<!-- setting mobile environment -->		
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen" />	
+	
+	<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css">
+	<![endif]-->
+	
+	<!--[if lt IE 9]>
+	<script src="../../../html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/hoverIntent.js"></script>
+	<script type="text/javascript" src="js/superfish.js"></script>
+	<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+	<script type="text/javascript" src="js/jquery.tweet.js"></script>
+	<script type="text/javascript" src="js/jflickrfeed.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/slides.min.jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.mobilemenu.js"></script>
+	<script type="text/javascript" src="js/jquery.contact.js"></script>
+	<script type="text/javascript" src="js/jquery.preloadify.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+	
+	<!-- jQuery Revolution Slider -->
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="template-changer.css" media="screen"/>		
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>	
+	<script type="text/javascript" src="js/styleswitch.js"></script>	
+	
+	<!-- Google Web Fonts -->
+	<link href='../../../fonts.googleapis.com/css@family=Open+Sans_3A300,400,600,700' rel='stylesheet' type='text/css'>
+
+
+<script type="text/javascript">
+	$(function()
+		{
+			// Call stylesheet init so that all stylesheet changing functions 
+			// will work.
+			$.stylesheetInit();
+			
+			// This code loops through the stylesheets when you click the link with 
+			// an ID of "toggler" below.
+			$('#toggler').bind(
+				'click',
+				function(e)
+				{
+					$.stylesheetToggle();
+					return false;
+				}
+			);
+			
+			// When one of the styleswitch links is clicked then switch the stylesheet to
+			// the one matching the value of that links rel attribute.
+			$('.styleswitch').bind(
+				'click',
+				function(e)
+				{
+					$.stylesheetSwitch(this.getAttribute('rel'));
+					return false;
+				}
+			);
+		}
+	);
+</script>	
+	
+</head> 
+
+<body> 
+
+<!-- setting a fullscreen image as background:
+<img id="bg" src="images/apple.jpg" alt="apple-background" />
+-->
+
+
+	
+<div id="wrapper">
+	<header id="header">
+		<div class="centered-wrapper">
+			<div class="one-third">
+				<div class="logo"><a href="index.html"></a></div>
+			</div><!--end one-third-->
+			
+			<div class="two-third column-last">		
+				<nav id="navigation">
+					<ul id="mainnav">
+						<li><a href="index.html"><span>HOME</span></a>
+							
+						</li>
+                        <li><a href="contact.html"><span>TEAM</span></a>
+                        <ul>
+								<li><a href="gallery.html">acknowledgement</a></li>
+								<li><a href="services.html">Attribution</a></li>
+								<li><a href="gallery.html">Gallery</a></li>
+								<li><a href="about-us.html">Members</a></li>
+								<li><a href="testimonials.html">Our University</a></li>
+							</ul>
+							
+						</li>
+                        <li><a href="portfolio-four-columns.html"><span>PROJECT</span></a>
+							<ul>
+								<li><a href="portfolio-grid.html">ACHIEVEMENT</a></li>
+								<li><a href="portfolio-four-columns.html">Cadmium Absorption</a></li>
+								<li><a href="portfolio-three-columns.html">FUTURE WORK</a></li>
+								<li><a href="portfolio-two-columns.html">MntA transport</a></li>
+								<li><a href="portfolio-single.html">NOTEBOOK</a></li>
+                                <li><a href="portfolio-single.html">Other Work</a></li>
+                                <li><a href="portfolio-single.html">Overview</a></li>
+                                <li><a href="portfolio-single.html">protocol</a></li>
+                                <li><a href="portfolio-single.html">Sensor System</a></li>
+							</ul>		
+						</li>
+						<li><a href="#"><span>MODELING</span></a>
+							<ul>
+								<li><a href="gallery.html">CsgA-ECs ploymerzation</a></li>
+								<li><a href="services.html">Future work</a></li>
+								<li><a href="about-us.html">Gene circuit simulation</a></li>
+								<li><a href="pricing.html">MntA kinetic model</a></li>
+								<li><a href="testimonials.html">Overview</a></li>
+							</ul>
+						</li>
+						<li><a href="blog-masonry-2-columns.html"><span>RESULT</span></a>
+							<ul>
+								<li><a href="blog-masonry-2-columns.html">BIOBRICKS</a></li>
+								<li><a href="blog-masonry-3-columns.html">EXPERIMENT WORK</a></li>
+								<li><a href="blog.html">MODELING WORK</a></li>
+			
+							</ul>
+						</li>
+                        <li><a href="#"><span>POLICY & PRACTICE</span></a>
+							<ul>								
+								<li><a href="typography.html">Economics and ethics</a></li>
+								<li><a href="columns.html">OUTDOORS</a></li>
+								<li><a href="buttons-and-boxes.html">SYN-BIOLOGY STUDY</a></li>
+								<li><a href="tabs-and-toggles.html">VISITS</a></li>
+								
+							</ul>				
+						</li>						
+						
+						
+						
+                        <li><a href="contact.html"><span>SAFETY</span></a>
+							
+						</li>
+                        
+                        
+					</ul>
+				</nav><!--end navigation-->
+			</div><!--end two-third-->
+		<div class="clear"></div>			
+		</div><!--end centered-wrapper-->
+	</header>	
+	
+	<div class="top-shadow"></div>
+	
+	<section class="page-title">
+	<div class="page-background">
+		<div class="pattern1"></div>
+	</div>
+	<div class="bottom-shadow"></div>
+		<div class="title-wrapper">
+			<div class="title-bg">
+				<div class="title-content">
+					<div class="two-third">
+						<h2>Members</h2>
+					</div>
+					<div class="one-third column-last">		
+					</div>
+					<div class="clear"></div>
+				</div><!--end title-content-->
+			</div>
+		</div><!--end title-wrapper-->
+	</section>	
+
+	<div class="centered-wrapper">				
+				
+	<h6>INSTRUCTOR</H6>
+		<div class="team">
+			<div class="one-fourth">
+				<div class="team-member">
+					<a href="images/instructor1.jpg" rel="prettyPhoto" title="Ying Lin">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/instructor1.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Ying Lin</h3>
+						<h6>Instructor</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+            
+            <div class="one-fourth">
+				<div class="team-member">
+					<a href="images/instructor2.jpg" rel="prettyPhoto" title="Li Pan">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/instructor2.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Li Pan</h3>
+						<h6>Instructor</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+            
+       
+				
+				
+			<div class="one-fourth column-last">
+				<div class="team-member">
+					<a href="images/instructor3.jpg" rel="prettyPhoto" title="Dan Whiteman">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/instructor3.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Yanrui Ye</h3>
+						<h6>Instructor</h6>
+					</div>					
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+		</div><!--end team-->
+
+		<div class="clear"></div>
+	</div><!--end centered-wrapper-->
+    
+    <div class="centered-wrapper">				
+				
+  <h6>STUDENT</H6>	
+		<div class="team">
+			<div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student1.jpg" rel="prettyPhoto" title="Patrick Smith">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student1.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Manfredi</h3>
+						<h6>Student</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+           
+            <div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student2.jpg" rel="prettyPhoto" title="Patrick Smith">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student2.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Xiaojun Cai</h3>
+						<h6>Experimenter</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+            
+            <div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student3.jpg" rel="prettyPhoto" title="Patrick Smith">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student3.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Chen Shuoyu</h3>
+						<h6>Designer</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+				
+			<div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student4.jpg" rel="prettyPhoto" title="Jane Doe">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student4.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Chen Zhanru </h3>
+						<h6>Leader</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+			
+			<div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student5.jpg" rel="prettyPhoto" title="Jane Doe">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student5.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Minghui Deng</h3>
+						<h6>Experimenter</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->				
+				
+			<div class="one-fourth column-last">
+				<div class="team-member">
+					<a href="images/student6.jpg" rel="prettyPhoto" title="Dan Whiteman">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student6.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Deng Zihao</h3>
+						<h6>Experimenter</h6>
+					</div>					
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+		</div><!--end team-->
+
+		<div class="clear"></div>
+	</div><!--end centered-wrapper-->
+	
+    <div class="centered-wrapper">				
+				
+	
+		<div class="team">
+			<div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student7.jpg" rel="prettyPhoto" title="Patrick Smith">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student7.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Yihong Gu</h3>
+						<h6>Designer</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+           
+            <div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student8.jpg" rel="prettyPhoto" title="Patrick Smith">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student8.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Chongyin Han</h3>
+						<h6>Experimenter</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+            
+            <div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student9.jpg" rel="prettyPhoto" title="Patrick Smith">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student9.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Xiaobin Huang</h3>
+						<h6>Modeler</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+				
+			<div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student10.jpg" rel="prettyPhoto" title="Jane Doe">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student10.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Jionghui Li</h3>
+						<h6>Experimenter</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+			
+			<div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student11.jpg" rel="prettyPhoto" title="Jane Doe">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student11.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Xiaojing Li</h3>
+						<h6>Experimenter</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->				
+				
+			<div class="one-fourth column-last">
+				<div class="team-member">
+					<a href="images/student12.jpg" rel="prettyPhoto" title="Dan Whiteman">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student12.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Jing Liao</h3>
+						<h6>Modeler</h6>
+					</div>					
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+		</div><!--end team-->
+
+		<div class="clear"></div>
+	</div><!--end centered-wrapper-->
+	
+    <div class="centered-wrapper">				
+				
+	
+		<div class="team">
+			<div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student13.jpg" rel="prettyPhoto" title="Patrick Smith">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student13.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Xiaomei Lin</h3>
+						<h6>Experimenter</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+           
+            <div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student14.jpg" rel="prettyPhoto" title="Patrick Smith">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student14.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>YuNan Lin</h3>
+						<h6>Web Developer</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+            
+            <div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student15.jpg" rel="prettyPhoto" title="Patrick Smith">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student15.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Liu Senbiao</h3>
+						<h6>Experimenter</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+				
+			<div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student16.jpg" rel="prettyPhoto" title="Jane Doe">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student16.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Pang Nana</h3>
+						<h6>Modeler</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+			
+			<div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student17.jpg" rel="prettyPhoto" title="Jane Doe">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student17.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Su Junying</h3>
+						<h6>Modeler</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->				
+				
+			<div class="one-fourth column-last">
+				<div class="team-member">
+					<a href="images/student18.jpg" rel="prettyPhoto" title="Dan Whiteman">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student18.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Xiao RuiMing</h3>
+						<h6>Experimenter</h6>
+					</div>					
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+            
+            <div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student19.jpg" rel="prettyPhoto" title="Patrick Smith">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student19.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Zhang Jiahui</h3>
+						<h6>Designer</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+				
+			<div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student20.jpg" rel="prettyPhoto" title="Jane Doe">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student20.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Zhang YuLong</h3>
+						<h6>Experimenter</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+            <div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student21.jpg" rel="prettyPhoto" title="Jane Doe">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student21.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Tianhua Cui</h3>
+						<h6>Experimenter</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+			
+             <div class="one-fourth">
+				<div class="team-member">
+					<a href="images/student22.jpg" rel="prettyPhoto" title="Jane Doe">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student22.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>luo xunxun</h3>
+						<h6>Experimenter</h6>
+					</div>				
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+			
+			
+			
+			<div class="one-fourth column-last">
+				<div class="team-member">
+					<a href="images/student23.jpg" rel="prettyPhoto" title="Dan Whiteman">
+						<span class="item-on-hover"><span class="hover-image"></span></span>
+						<img class="team-avatar" src="images/student23.jpg" alt=" " />
+					</a>
+					<div class="team-text">
+						<h3>Yu Zhong</h3>
+						<h6>Experimenter</h6>
+					</div>					
+				</div><!--end team-member-->	
+			</div><!--end one-fourth-->
+		</div><!--end team-->
+
+		<div class="clear"></div>
+	</div><!--end centered-wrapper-->
+	
+	
+	<div class="space"></div>
+	
+	<footer id="footer">
+		<div class="centered-wrapper">
+			<div id="topfooter">
+				<div class="one-half">
+					<h3>About Us</h3>
+					<p>In 2015, we SCUT teams won top ten innovative and entrepreneurial team set up by SCUT. In our team everyone owns basic biological knowledge and skills of the competition(iGEM). </p>
+					<div class="footer-logo"></div>
+				</div><!--end percent-one-half-->
+				<div class="one-half column-last">
+					<div class="percent-one-half">
+						<h3>We are</h3>
+						<div class="tweet"></div>
+					</div>
+					
+					<div class="percent-one-half column-last">
+						<h3>Thanks</h3>
+						<ul>
+							<li>Zhang Zhenwu,Prof. Guo Shouqian,Dr. Li, Dr. Li Cheng,Dr. Wang Meng,Chen Kejie</li>
+							<li>Guangzhou Municipal Environmental Protection Bureau<br/>
+							</a></li>
+						</ul>
+					</div><!--end one-half-->					
+				</div><!--end one-half-->
+			</div><!--end topfooter-->
+		</div><!--end centered-wrapper-->
+		
+		<div id="bottomfooter">		
+			<div class="centered-wrapper">		
+				<div class="one-half">
+					<p>COPYRIGHT &copy;2015-SCUT</p>
+				</div><!--end one-half-->
+
+				
+						
+					<!-- You can add social icons for forrst, dribbble, vimeo, linkedin and skype. Take the ones you need from the list and paste them above
+					
+						<li><a class="forrst" href="#">Forrst</a></li>
+						<li><a class="dribbble" href="#">Dribbble</a></li>
+						<li><a class="vimeo" href="#">Vimeo</a></li>
+						<li><a class="linkedin" href="#">LinkedIn</a></li>
+						<li><a class="skype" href="#">Skype</a></li> 
+					-->	
+					</ul>					
+				</div><!--end one-half-->
+			</div><!--end centered-wrapper-->				
+		</div><!--end bottomfooter-->
+	</footer><!--end footer-->	
+	
+</div><!--end wrapper-->
+
+	<script type="text/javascript" src="js/custom.js"></script>
+    
+
+</body> 
+</html>
